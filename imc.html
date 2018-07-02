@@ -1,0 +1,80 @@
+<script>
+
+    function pulaLinha () {
+      document.write ("<br>")
+    }
+
+    function mostra(imc) {
+      document.write(imc)
+    }
+
+      var peso = 75
+      var altura = 1.72
+      var imc = peso / (altura * altura)
+      mostra("meu peso é: " + imc)
+
+    pulaLinha()
+
+    function mostra(imcDoPrimo) {
+      document.write(imcDoPrimo)
+    }
+
+      var pesoDoPrimo = 83
+      var alturaDoPrimo = 1.76
+      var imcDoPrimo = pesoDoPrimo / (alturaDoPrimo * alturaDoPrimo)
+      mostra("o imc do meu primo é " + imcDoPrimo)
+
+      pulaLinha()
+
+
+     function calculaIMC (peso, altura) {
+      var imc = peso / (altura * altura)
+      mostra("IMC calculando é " + imc)
+    }
+
+      var pesoDoPrimo = 83
+      var alturaDoPrimo = 1.76
+      calculaIMC(alturaDoPrimo, pesoDoPrimo)
+
+      pulaLinha()
+
+      function calculaIMC(peso, altura) {
+      var imc = peso / (altura * altura)
+      return imc
+    }
+
+      var pesoDoPrimo = 83
+      var alturaDoPrimo = 1.76
+      var imcDoPrimo = calculaIMC(pesoDoPrimo, alturaDoPrimo)
+      mostra("O imc do primo é: " + imcDoPrimo)
+
+      pulaLinha()
+
+      mostra("ele ainda está " + (imcDoPrimo - 18.5)
+      + "    o ponto acima do limite da magreza")
+
+      pulaLinha()
+
+
+      function calculaIMC(peso, altura) {
+      var imc = peso / (altura * altura)
+      return imc
+      }
+
+      var peso = 75
+      var altura = 1.72
+      var imc = calculaIMC(peso, altura)
+
+      mostra("meu imc é: " + imc)
+
+      pulalinha()
+
+      mostra("ainda estou " + (imc - 18.5)
+        + "    ponto acima do limite de magreza")
+
+      
+
+
+
+
+</script>
